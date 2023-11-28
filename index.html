@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chris Chan</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Bodoni+Moda&display=swap"
+    />
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <ul>
+            <li>
+              <a
+                href="https://chris-portfolio-website.s3.ap-southeast-1.amazonaws.com/index.html"
+              >
+                Home
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/chrischanwz/"
+                target="_blank"
+                id="changeTextLink"
+                >Get In Touch!</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div class="intro">
+          <div class="intro-text">
+            <h1>Hi, I'm Chris</h1>
+
+            <p>Fullstack Developer</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="about">
+      <div class="about-container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/user.jpeg" alt="Photo of Chris" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              I am currently a penultimate Information Systems major from NUS. I
+              have experience in fullstack web development; from frontend
+              frameworks, to REST API design, and finally backend technologies
+              such as AWS cloud services. I am deeply passionate in expanding my
+              knowledge in cloud architecture and using that to strategically
+              solve business pain points. I love learning new things, solving
+              new challenges, and making new friends! Do connect with me on
+              LinkedIn :)
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul class="skills-container">
+                <li class="skills-list-item">
+                  <div>
+                    <img
+                      src="images/html-logo.png"
+                      alt="html logo"
+                      width="30"
+                      height="30"
+                    />
+                  </div>
+                  <p>HTML</p>
+                </li>
+                <li class="skills-list-item">
+                  <div>
+                    <img
+                      src="images/css-logo.png"
+                      alt="css logo"
+                      width="30"
+                      height="30"
+                    />
+                  </div>
+                  <p>CSS</p>
+                </li>
+                <li class="skills-list-item">
+                  <div>
+                    <img
+                      src="images/javascript-logo.png"
+                      alt="javascript logo"
+                      width="30"
+                      height="30"
+                    />
+                  </div>
+                  <p>Javascript</p>
+                </li>
+                <li class="skills-list-item">
+                  <div>
+                    <img
+                      src="images/react-logo.png"
+                      alt="react logo"
+                      width="30"
+                      height="30"
+                    />
+                  </div>
+                  <p>React here</p>
+                </li>
+                <li class="skills-list-item">
+                  <div class="logo-container">
+                    <img
+                      src="images/aws-logo.png"
+                      alt="react logo"
+                      width="30"
+                      height="30"
+                    />
+                  </div>
+                  <p>AWS Services (Lambda, S3, API Gateway, etc)</p>
+                </li>
+                <li class="skills-list-item">
+                  <div class="logo-container">
+                    <img
+                      src="images/next-logo.png"
+                      alt="react logo"
+                      width="40"
+                      height="auto"
+                    />
+                  </div>
+                  <p>Next.JS</p>
+                </li>
+                <li class="skills-list-item">
+                  <div class="logo-container">
+                    <img
+                      src="images/git-logo.png"
+                      alt="react logo"
+                      width="40"
+                      height="auto"
+                    />
+                  </div>
+                  <p>Git</p>
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>Heron Airbridge</span> - Fullstack Software Development
+                  Intern <br />
+                </li>
+                <li>
+                  <span>Google Student Developers Club NUS</span> - Partnerships
+                  Associate <br />
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>National University of Singapore</span><br />Penultimate
+                  Information Systems Major (Bachelors of Computing)
+                </li>
+                <li>
+                  <span>Anglo-Chinese School (Independent)</span
+                  ><br />International Baccalaureate
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="picture-carousel">
+      <div class="carousel-title">
+        <h2 class="carousel-title-text">
+          Here are some of the projects I have worked on...
+        </h2>
+      </div>
+      <div class="carousel-container">
+        <button id="prevBtn" class="carousel-button">&#9664;</button>
+        <div class="carousel-frame">
+          <div class="carousel-slider">
+            <div class="carousel-slide">
+              <img src="images/runwithme.png" alt="project 1" />
+              <div class="slide-content">
+                <h2>RunWithMe</h2>
+                <div class="techstacks-container">
+                  <p class="techstacks">NextJS</p>
+                  <p class="techstacks">Javascript</p>
+                  <p class="techstacks">Chakra UI</p>
+                  <p class="techstacks">Firebase</p>
+                </div>
+                <p class="slide-text">
+                  RunWithMe helps you find new friends to go on runs together.
+                  Host or join other runners, and keep each other motivated to
+                  achieve your personal goals!
+                </p>
+              </div>
+            </div>
+
+            <div class="carousel-slide">
+              <img src="images/axpyree.png" alt="project 2" />
+              <div class="slide-content">
+                <h2>Axpyree</h2>
+                <div class="techstacks-container">
+                  <p class="techstacks">ReactJS</p>
+                  <p class="techstacks">Javascript</p>
+                  <p class="techstacks">JSX</p>
+                  <p class="techstacks">Material UI</p>
+                  <p class="techstacks">Supabase</p>
+                  <p class="techstacks">Netlify</p>
+                </div>
+                <p class="slide-text">
+                  <a
+                    class="axpyree-link"
+                    href="https://axpyree.netlify.app/login"
+                    target="_blank"
+                  >
+                    Link
+                  </a>
+                  <br />
+                  Axpyree is an application where you can list your groceries
+                  and their expiry dates. Then, on the home page, you are
+                  reminded on upcoming expiring and expired items. Hopefully
+                  with this application, you never waste any of your groceries
+                  ever again!
+                </p>
+              </div>
+            </div>
+
+            <div class="carousel-slide">
+              <img src="images/portfolio-website.png" alt="project 3" />
+              <div class="slide-content">
+                <h2>Portfolio Website</h2>
+                <div class="techstacks-container">
+                  <p class="techstacks">HTML</p>
+                  <p class="techstacks">Javascript</p>
+                  <p class="techstacks">CSS</p>
+                  <p class="techstacks">AWS S3</p>
+                </div>
+                <p class="slide-text">The website that you are on now!</p>
+              </div>
+            </div>
+
+            <!-- Add more images as needed -->
+          </div>
+        </div>
+        <button id="nextBtn" class="carousel-button">&#9654;</button>
+      </div>
+    </div>
+
+    <div id="cta">
+      <div class="cta-container">
+        <h1 class="cta-text">Interested in working together?</h1>
+        <a
+          class="cta-button"
+          href="https://www.linkedin.com/in/chrischanwz/"
+          target="_blank"
+          >Say Hello</a
+        >
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-row">
+        <h2>Socials</h2>
+        <ul class="social-links">
+          <li>
+            <a href="https://github.com/chrischanwz" target="_blank">GitHub</a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/chrischanwz/" target="_blank"
+              >LinkedIn</a
+            >
+          </li>
+          <li>
+            <a href="mailto:chrischanwz@gmail.com" target="_blank">Email</a>
+          </li>
+        </ul>
+      </div>
+      <!-- Additional footer rows can be added here -->
+    </footer>
+  </body>
+  <script src="script.js"></script>
+</html>
